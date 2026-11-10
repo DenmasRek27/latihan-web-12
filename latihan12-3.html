@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3 — Navbar Responsive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-blue-600 text-white p-3">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="font-bold text-xl">MyApp</div>
+
+            <!-- Tombol Hamburger (Hanya Tampil di Mobile) -->
+            <button id="btn-menu" class="sm:hidden text-4xl">=</button>
+
+            <!-- Navigasi Desktop -->
+            <div class="hidden sm:flex space-x-6">
+                <a href="#" class="hover:text-blue-200">Beranda</a>
+                <a href="#" class="hover:text-blue-200">Fitur</a>
+                <a href="#" class="hover:text-blue-200">Kontak</a>
+            </div>
+        </div>
+
+        <!-- Navigasi Mobile (Togglable) -->
+        <div id="menu-mobile" class="hidden md:hidden flex flex-col space-y-2 mt-3 pt-3 border-t border-blue-500">
+            <a href="#" class="hover:bg-blue-700 px-2 py-1 rounded">Beranda</a>
+            <a href="#" class="hover:bg-blue-700 px-2 py-1 rounded">Fitur</a>
+            <a href="#" class="hover:bg-blue-700 px-2 py-1 rounded">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Script Sederhana Toggle Hamburger -->
+    <script>
+        const btn = document.getElementById('btn-menu');
+        const menu = document.getElementById('menu-mobile');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
