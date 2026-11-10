@@ -1,7 +1,6 @@
 body {
     display: flex;
     justify-content: center;
-    align-index: center; /* or align-items: center */
     align-items: center;
     min-height: 100vh;
     margin: 0;
