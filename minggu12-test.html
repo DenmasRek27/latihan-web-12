@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minggu 12 — Tailwind CSS</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body class="bg-gray-300 text-gray-800">
+        <h1 class="text-3xl font-bold text-center py-10">Halo, Tailwind CSS!</h1>
+
+        <!-- Padding (p = semua sisi, px = horizontal, py = vertical, pt/pb/pl/pr = per sisi) -->
+    <div class="p-4">Padding 16px semua sisi</div>
+    <div class="px-6 py-2">Padding horizontal 24px, vertical 8px</div>
+
+    <!-- Margin (m = semua sisi, mx = horizontal, my = vertical) -->
+    <div class="m-4">Margin 16px semua sisi</div>
+    <div class="mx-auto">Margin horizontal auto (untuk center)</div>
+
+    <!-- Skala spacing Tailwind: 0, 0.5, 1, 1.5, 2, 3, 4, 5, 6, 7, 8, 9, 10, ... -->
+    <!-- Angka × 4 = pixel. Jadi: p-1 = 4px, p-2 = 8px, p-4 = 16px, p-8 = 32px -->
+
+    <!-- Ukuran teks -->
+    <h1 class="text-4xl">Judul Besar (36px)</h1>
+    <h2 class="text-2xl">Judul Sedang (24px)</h2>
+    <p class="text-base">Teks normal (16px)</p>
+    <p class="text-sm">Teks kecil (14px)</p>
+
+    <!-- Berat teks -->
+    <p class="font-bold">Tebal</p>
+    <p class="font-semibold">Agak tebal</p>
+    <p class="font-normal">Normal</p>
+    <p class="font-light">Tipis</p>
+
+    <!-- Warna teks -->
+    <p class="text-red-500">Merah</p>
+    <p class="text-blue-600">Biru</p>
+    <p class="text-green-700">Hijau</p>
+
+    <!-- Align -->
+    <p class="text-center">Tengah</p>
+    <p class="text-right">Kanan</p>
+
+    <!-- Background color -->
+    <div class="bg-white">Latar putih</div>
+    <div class="bg-blue-500">Latar biru</div>
+    <div class="bg-gray-200">Latar abu-abu terang</div>
+
+    <!-- Warna Tailwind: 50 (paling terang) sampai 950 (paling gelap) -->
+    <!-- Contoh: blue-100 sangat terang, blue-900 sangat gelap -->
+
+    <div class="border border-gray-300">Batas abu-abu tipis</div>
+    <div class="border-2 border-red-500">Batas merah tebal 2px</div>
+    <div class="rounded-lg">Sudut membulat besar</div>
+    <div class="rounded-full">Lingkaran penuh</div>
+
+
+        <!-- Dasar: mobile -->
+    <!-- sm: ≥ 640px, md: ≥ 768px, lg: ≥ 1024px, xl: ≥ 1280px -->
+    <div class="text-sm md:text-base lg:text-lg">
+        Teks kecil di HP, sedang di tablet, besar di desktop
+    </div>
+
+    <div class="flex flex-col md:flex-row">
+        <!-- Vertikal di HP, horizontal di tablet ke atas -->
+        <div class="w-full md:w-1/2">Kolom 1</div>
+        <div class="w-full md:w-1/2">Kolom 2</div>
+    </div>
+</body> 
+</html>
